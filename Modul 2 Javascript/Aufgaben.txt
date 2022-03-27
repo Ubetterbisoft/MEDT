@@ -1,0 +1,20 @@
+(a) Was liefert der folgende Sourcecode?
+	A: Es wird ein alert "Hallo Welt" ausgegeben
+
+(b) Was liefert folgender Sourcecode?
+	A: Es wird ein alert "Hallo TGM" ausgegeben und die lokale Variable me wird auf "---" gesetzt.
+
+(c) Was liefert folgender Sourcecode?
+	A: Es werden die Quadratzahlen von 1 bis 100 in die Konsole geschrieben
+
+(d) Formuliere die Summenfunktion (Berechnung der Summer aller Zahlen von 1 bis n vom letzten Übungsblatt als Funktion in JavaScript.
+    Als Parameter bekommt diese Funktion den Wert n übergeben und liefert die entsprechende Summe als Resultat zurück.  
+    Teste deine Funktion mit einer Benutzereingabe und gib das Ergebnis mittels alert() aus.
+
+	A:	function summenFunktion(let n){
+			let resultat
+			for(int i = 0; i < n;i++){
+				resultat = resultat + i
+			}
+			return resultat
+		}
