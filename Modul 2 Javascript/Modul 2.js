@@ -28,6 +28,19 @@
         console.log(e)
     }
 
+    //Aufgabe i
+    let array = [1,2,3,4,5,6,7,8,9,10]
+
+    function reverseArr(array){
+        let temp =[array.length]
+        let arrayLength = array.length
+        for(let i = 0; i < array.length +1; i++, arrayLength--){
+            temp[i] = array[arrayLength] 
+        }
+        return temp
+    }
+    alert(reverseArr(array))
+
 
 
 	
