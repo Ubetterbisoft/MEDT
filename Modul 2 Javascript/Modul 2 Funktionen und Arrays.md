@@ -1,4 +1,4 @@
-# jaModul 2 Funktionen und Arrays
+# Javascript Modul 2 Funktionen und Arrays
 
 (a) Was liefert der folgende Sourcecode?
 	A: Es wird ein alert "Hallo Welt" ausgegeben
