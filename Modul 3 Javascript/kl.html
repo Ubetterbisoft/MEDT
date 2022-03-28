@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DOM Test</title>
+</head>
+<body>
+<div class="meta">
+<h1> &Uuml;berschrift </h1>
+</div>
+<div id="content">
+<p id="lipsum">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+do eiusmod tempor incididunt ut labore et dolore magna
+aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+ullamco laboris nisi ut aliquip ex ea commodo consequat.
+</p>
+<p class="note">
+Anmerkung 1
+</p>
+<p class="note">
+Anmerkung 2
+</p>
+</div>
+<div id="footer" class="meta">
+Impressum
+</div>
+<button>Layout</button>
+<script>
+    let elem = document.getElementById('content');
+    let lipsum = document.getElementById('lipsum');
+    console.log(elem.parentNode)
+    console.log(elem.childNodes)
+    console.log(elem.previousSibling)
+    console.log(elem.nextSibling)
+    console.log(lipsum.parentNode.parentNode.childNodes[7]);
+
+
+  
+    let footer = document.getElementById('footer');
+    function doSomething() {
+        footer.innerHTML = event.clientX + " / " + event.clientY;
+    }
+    function red() {
+        footer.style.backgroundColor = '#FF0000';
+    }
+    function white() {
+        footer.style.backgroundColor = '#FFFFFF';
+    }
+    lipsum.addEventListener('mousemove',doSomething);
+    lipsum.addEventListener('mouseover', red);
+    lipsum.addEventListener('mouseout', white)
+</script>
+</body>
+</html>
