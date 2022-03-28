@@ -1,4 +1,4 @@
-# Modul 2 Funktionen und Arrays
+# jaModul 2 Funktionen und Arrays
 
 (a) Was liefert der folgende Sourcecode?
 	A: Es wird ein alert "Hallo Welt" ausgegeben
@@ -93,7 +93,33 @@ dene Arten)
 
 ​	(2) A: Der Button "expliciOriginalTarget: button"
 
-(h)
+(*h) Recherchiere zum Thema event bubbling zum Beispiel unter https://www.sitepoint.com/event-bubbling-javascript/ und fasse den Mechanismus mit eigenen Worten zusammen und beantworte folgende Fragen:
+
+​       A: Beim event bubbling  wird versucht eine Funktion zu finden. Die suche nach der Funktion beginnt zuerst beim innersten Zielelement und erstreckt sich 		    immer weiter nach außen.
+
+* In welcher Reihenfolge werden die gefundenen Eventhandler ausgeführt?
+  * A: Zuerst kommt die capture phase, danach die target phase und als letztes die bubble phase
+* Wie lässt sich die Ausführung von weiteren Eventhandlern unterbinden bzw weiter steuern?
+  * A:	X
+* Wie lässt sich bei einem Click auf ein <a href="..."> - Element damit verhindern, dass die Seite verlassen wird?
+  * A: Indem der Link auf die derzeit aufgerufene Seite verweist
+
+(i) Erstelle eine Funktion, die ein Array übergeben bekommt und ein neues Array zurückliefert, das die Elemente des alten Arrays in umgekehrter Reihenfolge 	   enthält. Verwende hierfür keine vorgefertigten Funktionen wie arr.reverse()
+	
+
+```javascript
+let array = [1,2,3,4,5,6,7,8,9,10]
+
+    function reverseArr(array){
+        let temp =[array.length]
+        let arrayLength = array.length
+        for(let i = 0; i < array.length +1; i++, arrayLength--){
+            temp[i] = array[arrayLength] 
+        }
+        return temp
+    }
+    alert(reverseArr(array))
+```
 
 
 
