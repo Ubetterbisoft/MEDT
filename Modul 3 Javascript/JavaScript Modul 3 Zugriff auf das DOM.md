@@ -64,4 +64,24 @@ A: Wenn man in der Lipsum section mit dem Mauszeiger herumspielt, werden die jew
             lipsum.addEventListener('mouseover', changeColor);
             lipsum.addEventListener('mouseout',changeColor2);
 ```
+(e) Code:
+```html
+<html>
+    <head>
+        <title>Dejan Rajic</title>
+    </head>
+    <body>
+        <img src="background.jpg" id="bild" alt="Das sollte das Bild sein" style="width: 343px;">
+        <script>
+            let img = document.getElementById('bild');
 
+            function moveImg() {
+                img.style.marginLeft = event.clientX + 'px';
+                img.style.marginTop = event.clientY + 'px';
+            }
+
+            document.body.addEventListener('mousemove', moveImg);
+        </script>
+    </body>
+</html>
+```
