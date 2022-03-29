@@ -1,30 +1,65 @@
 <!DOCTYPE html>
- <html>
- <head>
- <title>DOM Test</title>
-    <script src="Modul3.js"></script>
- </head>
- <body>
- <div class="meta">
- <h1> &Uuml;berschrift </h1>
- </div>
- <div id="content">
- <p id="lipsum" onmouseover="red()">
- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
- do eiusmod tempor incididunt ut labore et dolore magna
- aliqua. Ut enim ad minim veniam, quis nostrud exercitation
- ullamco laboris nisi ut aliquip ex ea commodo consequat.
- </p>
- <p class="note">
- Anmerkung 1
- </p>
- <p class="note">
- Anmerkung 2
- </p>
- </div>
- <div id="footer" class="meta">
- Impressum
- </div>
- <button>Layout</button>
- </body>
- </html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <div class="meta">
+            <h1> &Uuml;berschrift </h1>
+        </div>
+
+        <div id="content" >
+            <p id="lipsum" style="background-color: blue;">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+            do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+
+            <p class="note">
+            Anmerkung 1
+            </p>
+
+            <p class="note">
+            Anmerkung 2
+            </p>
+        </div>
+
+        <div id="footer" class="meta">
+            Impressum
+        </div>
+
+        <button>Layout</button>
+            
+        <script>
+            function red() {
+               return "#ff0000"
+            }
+            function yellow(){
+               return "#ffff00"
+            }
+
+
+            
+            let footer = document.getElementById('footer');
+            function changeColor(){
+                footer.style.backgroundColor = red();
+            }
+            function changeColor2(){
+               footer.style.backgroundColor = yellow();
+            }
+         
+           
+            
+            function doSomething() {
+                footer.innerHTML = event.clientX + " / " + event.clientY;
+            }
+
+            let lipsum = document.getElementById('lipsum');
+            lipsum.addEventListener('mousemove',doSomething);
+            lipsum.addEventListener('mouseover', changeColor);
+            lipsum.addEventListener('mouseout',changeColor2);
+            
+        </script>
+    </body>
+</html>
