@@ -1,4 +1,4 @@
-function red() {
+            function red() {
                return "#ff0000"
             }
             function yellow(){
