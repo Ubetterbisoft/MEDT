@@ -36,7 +36,7 @@ Mauszeiger sich über das lipsum-Element bewegt (mouseover).
 A: Wenn man in der Lipsum section mit dem Mauszeiger herumspielt, werden die jeweiligen Koordinaten des Mauszeigers angezeigt.
 
 ```javascript
-function red() {
+	    function red() {
                return "#ff0000"
             }
             function yellow(){
