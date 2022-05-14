@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+    <title>Pizza Bestellseite</title>
+    <meta charset="utf-8">
+    <script language="javascript" src="../Js/index.js"></script>
+    <link rel="stylesheet" href="../Css/index.css">
+</head>
+<body class="body">
+    <fieldset class ="persönlicheDaten">
+		
+			<legend>Persönliche und Adressdaten</legend> <br>
+			<!--Die einzelnen Spalten innerhalb der Containerklasse-->
+			<div class="col1">
+                <label for="vname">Vorname</label> &nbsp; &nbsp; &nbsp;<input type="text"  id="vname" name="vname" placeholder="vname (Input Type Text)"><br> <br >
+				<label for="nname">Nachname</label>  &nbsp;    <input type="text" id="nname" name="nname" placeholder="nname (Input Type Text)"><br> <br>
+                <label for="adresse">Adresse</label>   &nbsp; &nbsp; &nbsp;  <input type="text" id="adresse" name="adresse" placeholder="adresse (Input Type Text)"><br> <br>
+                <label for="plz">Postleitzahl</label>  &nbsp;<input type="number" id="pzl" name="pzl" placeholder="plz (Input Type number"><br />
+                
+
+                
+			</div>
+            <div class="col2">
+                <label for="gebdat">Geburtsdatum&nbsp;</label><input type="date" id="gebdat" name="gebdat" placeholder="gebdat (Input Type Date)"><br />
+                Geschlecht &nbsp;&nbsp;&nbsp;
+                <input type="radio" id="radio" name="geschl" value="m"><label for="radio">m</label>
+				<input type="radio" id="radio" name="geschl" value="w"><label for="radio">w</label><br />
+            </div>	
+    </fieldset>
+
+    <fieldset class="pizzaDaten">
+        <legend>Daten zur Pizza</legend>
+        <label for="Pizzenauswahl"></label>Pizzenauswahl
+        <select name="pizzen" id="pizzen">
+            <option value="Margharita">Margharita</option>
+        </select>
+    </fieldset>		
+</body>

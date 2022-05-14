@@ -1,0 +1,15 @@
+.body{
+    
+    padding: 3em;
+    width: 80%;
+}
+
+.col1{
+    float: left;
+    
+}
+
+.col2{
+    float: right;
+    width: 40%;
+}
