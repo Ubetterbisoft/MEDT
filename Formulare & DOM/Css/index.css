@@ -13,3 +13,17 @@
     float: right;
     width: 40%;
 }
+.left{
+    float: left;
+}
+.right{
+    float: right;
+    width: 40%;
+    
+    
+}
+#Zusatzwünsche{
+    width: 70%;
+    height: 150px;
+    
+}

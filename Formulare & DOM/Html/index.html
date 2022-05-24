@@ -28,9 +28,10 @@
     </fieldset>
 
     <fieldset class="pizzaDaten">
+    <div class="left">
         <legend>Daten zur Pizza</legend>
         <label for="Pizzenauswahl"></label>Pizzenauswahl
-        <div class="left">
+        
         <select name="pizzen" id="pizzen">
             <option value="pizza auswählen">pizza auswählen</option>
             <option value="Margharita">Margharita</option>
@@ -51,23 +52,36 @@
         <label for="Crunchy"><input type="Checkbox" name="Crunchy"> Crunchy</label>
         <label for="Schinken"><input type="Checkbox" name="Schinken">Schinken</label>
 
-        <div  id="slider">
+        <div  class="slider">
             Schärfeslider: <br>
             <div id="Beschreibung">
-                
+                Mild
             </div>
             <br>
             <!--Slider-->
-            <input type="range" id="notenfarbe" value="4">
-			<output name="x" id="x" for="notenfarbe">50</output>
+            <input type="range" id="Schärfeslider" min ="1" max="4" onchange="spiceBar(this.value);">
+			<output name="x" id="x" for="Schärfeslider">1</output>
             <br>
             <br />
 				<input type="number" name="nf" id="nf" min="1" max="4" onchange="spiceBar(this.value);">
 
         </div>
+        
+       
 
+        
+    
+        
     </div>    
+    <div class="right">
+        Zusatswünsche <br><br>
+        <input type="Textarea" id="Zusatzwünsche">
+
+    </div>
+
+    
   
 
-    </fieldset>		
+    </fieldset>	
+    
 </body>
