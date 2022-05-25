@@ -6,8 +6,9 @@
     <link rel="stylesheet" href="../Css/index.css">
 </head>
 <body class="body">
+    <form name="bform">
     <fieldset class ="persönlicheDaten">
-		<form name="bform" oninput="x.value=parseInt(notenfarbe.value);change_nf(x.value);"></form>
+		
 			<legend>Persönliche und Adressdaten</legend> <br>
 			<!--Die einzelnen Spalten innerhalb der Containerklasse-->
 			<div class="col1">
@@ -44,18 +45,18 @@
         Extras
         <br>
         <br>
-        <label for="käse"><input type="Checkbox">Käse</label>&nbsp;&nbsp;
-        <label for="Mais"><input type="Checkbox">Mais</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <label for="Käsekruste"><input type="Checkbox">Käsekruste</label>
+        <label for="kaese"><input type="Checkbox" name="box" value="Käse">Käse</label>&nbsp;&nbsp;
+        <label for="Mais"><input type="Checkbox" name="box" value ="Mais">Mais</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="Käsekruste"><input type="Checkbox" name="box" value ="Käsekruste">Käsekruste</label>
         <br>
-        <label for="scharf"><input type="Checkbox">scharf</label>
-        <label for="Crunchy"><input type="Checkbox" name="Crunchy"> Crunchy</label>
-        <label for="Schinken"><input type="Checkbox" name="Schinken">Schinken</label>
+        <label for="scharf"><input type="Checkbox" name="box" value="scharf">scharf</label>
+        <label for="Crunchy"><input type="Checkbox" name="box" value ="Crunchy"> Crunchy</label>
+        <label for="Schinken"><input type="Checkbox" name="box" value ="Schinken">Schinken</label>
 
         <div  class="slider">
             Schärfeslider: <br>
             <div id="Beschreibung">
-                Mild
+                Schärfe
             </div>
             <br>
             <!--Slider-->
@@ -75,7 +76,10 @@
     </div>    
     <div class="right">
         Zusatswünsche <br><br>
-        <input type="Textarea" id="Zusatzwünsche">
+        <textarea name="text" id="text" cols="30" rows="10"></textarea>
+        <br>
+        <br>
+        <input type="button" id ="Druckausgabe" value="Bestellung Druckansicht" onclick="createPrintscreen();">
 
     </div>
 
@@ -83,5 +87,13 @@
   
 
     </fieldset>	
+    <br>
+    
+
+    <div id="printscreen">
+        Übersicht der Bestelldaten:
+
+    </div>
+    </form>
     
 </body>

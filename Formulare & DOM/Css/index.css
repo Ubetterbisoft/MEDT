@@ -22,8 +22,12 @@
     
     
 }
-#Zusatzwünsche{
+#text{
+    resize: none;
     width: 70%;
-    height: 150px;
     
+}
+#Druckausgabe{
+    width: 70%;
+    height:     50px;
 }

@@ -50,3 +50,38 @@ function spiceBar(wert){
 			
 
 }
+
+function createPrintscreen(){
+	let nname = window.document.bform.nname.value;
+	let vname = window.document.bform.vname.value;
+	let adresse = window.document.bform.adresse.value;
+	let postleitzahl = window.document.bform.pzl.value;
+	let geburtsdatum = window.document.bform.gebdat.value;
+	let Geschlecht = window.document.bform.radio.value;
+	let pizzen = window.document.bform.pizzen.value;
+
+	let textarea = window.bform.text.value;
+	let extras ="";
+	document.bform.box.forEach(element =>{
+		if(element.checked){
+			extras += element.value + ", ";
+		}
+	});
+	
+
+
+	let schärfeslider = window.document.bform.Schärfeslider.value;
+	
+	let zusatzwünsche = window.document.bform.text.value;
+	let string;
+	if(Geschlecht === "m"){
+		string = "Sehr geehrter Herr " +nname +" " +vname + " " +"Geboren am "+ +geburtsdatum +", "+adresse + postleitzahl+" " +"<br> Sie haben folgende Pizza bestellt:<br> "
+		 + pizzen + " " +extras + " " + textarea + "<br> Vielen Dank für ihre Bestellung";
+	}
+
+	//Es fehlt das gleiche nur für weiblich und ohne angabe und das datum wird nicht ausgegeben
+
+
+	
+	document.getElementById("printscreen").innerHTML = string;
+}
