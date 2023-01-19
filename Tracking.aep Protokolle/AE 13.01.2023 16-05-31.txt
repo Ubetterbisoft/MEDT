@@ -1,0 +1,8 @@
+  13.01.2023 16:05:31: Komposition 'Komp 1' gestartet.
+
+  Speichern unter: C:\Users\draji\Desktop\Github\MEDT\Point-tracker.avi      Rendern vom Benutzer gestoppt.    13.01.2023 16:05:47: Komposition 'Komp 1' beendet.
+
+
+  Bish. Renderz.: 15 Sekunden
+Das Protokoll wurde am 13.01.2023 um 16:05:47 geschlossen.
+
